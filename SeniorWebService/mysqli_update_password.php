@@ -1,0 +1,42 @@
+<?php include "mysqli_connect.php";?>
+<?php include "mysqli_functions.php";?>
+
+<?php
+
+	if (isset($_POST['tag']) && $_POST['tag'] != '') {
+	
+		$tag = $_POST['tag'];
+	
+		$response = array("tag" => $tag, "success" => 0, "error" => 0);
+	
+		if ($tag == 'update') {
+	
+			$username = $_POST['username'];
+			$pass = $_POST['pass'];
+			$newPass = $_POST['newPass'];
+	
+			if(updateUserByUsernameAndPassword($conn, $username, $pass, $newPass)){
+					
+					$response["success"] = 1;
+					$response["message"] = "Cập nhật thành công!";
+					
+	
+					echo json_encode($response);
+					
+			}else{
+				
+				$response["error"] = 1;
+				$response["error_msg"] = "Error occured in edit password!";
+				
+				echo json_encode($response);
+			}
+			
+			
+		} else {
+			echo "Invalid Request";
+		}
+	} else {
+		echo "Access Denied";
+	}
+
+?>
