@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/item_list_view">
+
+    <TextView
+        android:id="@+id/tvSongLyric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSongName"
+        android:layout_below="@id/tvSongName"
+        android:lines="1"
+        android:text="ve dau ve dau"
+        android:textColor="@color/text_color" 
+        android:textStyle="italic"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvSongId"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Ai Do Se Ve" 
+        android:textColor="#390a66"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvSongId"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="63463"
+        android:textColor="@color/text_button"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvSongAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSongLyric"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:lines="1"
+        android:text="Son Tung"
+        android:textSize="10sp" 
+        android:textColor="@color/text_button"/>
+
+</RelativeLayout>

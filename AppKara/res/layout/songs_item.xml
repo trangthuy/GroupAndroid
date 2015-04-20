@@ -1,0 +1,69 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/item_list_view">
+
+    <TextView
+        android:id="@+id/lyric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@id/name"
+        android:lines="1"
+        android:text="ve dau ve dau"
+        android:textColor="@color/text_color" 
+        android:textStyle="italic"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/image"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Ai Do Se Ve" 
+        android:textColor="#390a66"
+        android:textStyle="bold"/>
+<!--<ImageView
+        android:id="@+id/ImgChose"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/name"
+        android:background="@drawable/ic_like" />  -->
+    
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+    android:layout_marginTop="5dp"
+        android:gravity="center"       
+        android:background="@drawable/ic_song"/>
+
+    <TextView
+        android:id="@+id/name_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyric"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:lines="1"
+        android:text="Son Tung"
+        android:textSize="10sp" 
+        android:textColor="@color/text_button"/>
+	<TextView 
+	    android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</RelativeLayout>

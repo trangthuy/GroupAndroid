@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_8"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_iconn"
+        android:weightSum="1" />
+
+    <EditText
+        android:id="@+id/edt_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Tên đăng nhập"
+        android:lines="1"
+        android:textColor="#2968a2"
+        android:textColorHint="#2968a2"
+        android:weightSum="1.5" />
+
+    <EditText
+        android:id="@+id/edt_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textColor="#2968a2"
+        android:textColorHint="#2968a2"
+        android:weightSum="1.5" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="83dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_login"
+        android:weightSum="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.33"
+            android:text="Tạo tài khoản mới?"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_LinkToRegisterScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="Tại đây!"
+            android:textAllCaps="false"
+            android:textColor="#3083f5"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

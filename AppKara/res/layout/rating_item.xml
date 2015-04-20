@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="@color/text_button"
+        android:background="@drawable/ic_like" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvLyric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvNameSong"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Loi bai hat o day"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvNameSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLyric"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dip"
+            android:paddingTop="6dip"
+            android:text="Ten ca si"
+            android:textColor="#1589FF"
+            android:textSize="13sp"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/tvNameSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="6dip"
+            android:paddingTop="6dip"
+            android:text="Ten bai hat"
+            android:textColor="#390a66"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/tvSTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text_button"
+            android:text="2"
+            android:lines="1" 
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

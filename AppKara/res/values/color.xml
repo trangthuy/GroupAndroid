@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#FFFFFF</color>
+    <color name="list_background">#2c3240</color>
+    <color name="list_background_pressed">#2968a2</color>
+    <color name="list_divider">#272727</color>
+<color name= "text_color">#363636</color>
+<color name="text_button_selected">#a51084</color>
+<color name="text_button">#2778c3</color>
+<color name="song_background_pressed">#FAAFBA</color>
+</resources>

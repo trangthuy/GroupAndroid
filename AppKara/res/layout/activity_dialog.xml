@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#AFDCEC">
+
+ 
+
+    <EditText
+        android:id="@+id/edtCrurentPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="16dp"
+        android:hint="Mật khẩu hiện tại"
+        android:fontFamily="sans-serif"
+        android:inputType="textPassword" 
+        android:textColorHint="#92a8bd"
+        android:lines="1"
+        android:textColor="#390a66"/>
+
+    <EditText
+        android:id="@+id/edtNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:hint="Mật khẩu mới"
+        android:inputType="textPassword"
+        android:textColorHint="#92a8bd"
+        android:textColor="#390a66"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/edtReNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:hint="Nhập lại mật khẩu mới"
+        android:inputType="textPassword" 
+        android:textColorHint="#92a8bd"
+        android:textColor="#390a66"
+        android:lines="1"/>
+
+    <LinearLayout
+        android:id="@+id/co"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#292829"
+            android:textColor="#31b6e7"
+            android:text="Lưu" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#292829"
+             android:textColor="#31b6e7"
+            android:text="Hủy" />
+    </LinearLayout>
+
+</LinearLayout>
