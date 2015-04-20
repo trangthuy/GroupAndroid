@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/btnBooking"
+        android:showAsAction="ifRoom"
+        android:title="Hủy"
+        android:visible="true"
+        android:icon="@drawable/ic_huy"/>
+    <item android:id="@+id/btnUpdateSong"
+        android:showAsAction="ifRoom"
+        android:title="Delay"
+        android:visible="true"
+        android:icon="@drawable/ic_delay"/>
+
+</menu>

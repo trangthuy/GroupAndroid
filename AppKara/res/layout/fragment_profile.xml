@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_8" 
+    >
+
+    <TextView
+        android:id="@+id/tvpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="171dp"
+        android:textSize="16sp"
+        android:text="Mật khẩu" 
+        android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvpass"
+        android:layout_alignLeft="@+id/tvpassword"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:text="Tên đăng nhập" 
+         android:textColor="@color/text_color"/>
+
+    <TextView
+        android:id="@+id/tvpass"
+        android:layout_width="100dp"
+        android:password="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvpassword"
+        android:layout_alignBottom="@+id/tvpassword"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/tvusername"
+        android:background="@drawable/custom_edittext"
+        android:text="" 
+        android:textSize="16sp"
+        android:lines="1"
+        android:textColor="@color/text_button"/>
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvusername"
+        android:layout_alignBottom="@+id/tvusername"
+        android:layout_alignLeft="@+id/tvpass"
+        android:background="@drawable/custom_edittext"
+        android:text=""
+        android:textSize="16sp" 
+        android:textColor="@color/text_button"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/name_profile" />
+
+    <TextView
+        android:id="@+id/tvclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvpass"
+        android:layout_marginTop="42dp"
+        android:layout_toRightOf="@+id/tvchange"
+        android:text="Tại đây"
+        android:textColor="#3083f5"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvclick"
+        android:layout_alignBottom="@+id/tvclick"
+        android:layout_alignLeft="@+id/tvpassword"
+        android:text="Đổi mật khẩu, "
+        android:textColor="@color/text_color" />
+
+</RelativeLayout>

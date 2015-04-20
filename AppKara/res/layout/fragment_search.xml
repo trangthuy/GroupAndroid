@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_8"
+    android:orientation="vertical"
+    android:weightSum="10" 
+    >
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edittext"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Tìm kiếm..."
+        android:lines="1"
+        android:textColor="@color/text_button"
+        android:textColorHint="@color/text_button"
+        android:weightSum="2" >
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1.5" >
+
+        <Button
+            android:id="@+id/btnSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_bt_song"
+            android:text="Bài hát"
+            android:textColor="@color/text_button"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_bt_song"
+            android:text="Ca sĩ"
+            android:textColor="@color/text_button"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_bt_song"
+            android:text="Thể loại"
+            android:textColor="@color/text_button"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listSong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="4.5"
+        android:divider="#BDEDFF"
+        android:dividerHeight="1dp"
+        android:background="@drawable/list_selector_song"
+        android:choiceMode="singleChoice" 
+        android:listSelector="@drawable/list_selector_song" />
+
+    <ListView
+        android:id="@+id/listSinger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="4.5"
+        android:divider="#BDEDFF"
+        android:dividerHeight="1dp"
+        />
+
+    <ListView
+        android:id="@+id/listType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="4.5"
+        android:divider="#BDEDFF"
+        android:dividerHeight="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+</LinearLayout>
